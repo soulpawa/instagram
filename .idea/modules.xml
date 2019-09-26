@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/instagram.iml" filepath="$PROJECT_DIR$/.idea/instagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python/proyectoInstagram/.idea/proyectoInstagram.iml" filepath="$PROJECT_DIR$/../../Python/proyectoInstagram/.idea/proyectoInstagram.iml" />
+    </modules>
+  </component>
+</project>
