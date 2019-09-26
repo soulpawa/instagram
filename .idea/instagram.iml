@@ -6,12 +6,5 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Stocks" />
-    <orderEntry type="module" module-name="untitled" />
-    <orderEntry type="module" module-name="poyectoJoyeria" />
-    <orderEntry type="module" module-name="proyectoInstagram" />
-    <orderEntry type="module" module-name="proyectoStocks" />
-    <orderEntry type="module" module-name="mine" />
-    <orderEntry type="module" module-name="Musica" />
   </component>
 </module>
