@@ -55,10 +55,13 @@ def main(desde=None):
                 print(" already liked!")
 
         except IndexError as err:
+            print("", end="")
             print(datetime.datetime.now().strftime("%c"), "index errror: ", err)
         except KeyError as err:
+            print("", end="")
             print(datetime.datetime.now().strftime("%c"), "Key error: ", err)
         except Exception as err:
+            print("", end="")
             print(datetime.datetime.now().strftime("%c"), "exception: ", err)
             # TODO Si excepcion es por block, hacer un sleep de 5 mins y relanzarse a si
             #  TODO mismo con el count del proceso por el que vamos
