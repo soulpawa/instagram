@@ -70,7 +70,7 @@ def main(desde=None):
             if x > desde:
                 t = datetime.datetime.now()
                 print("Sleeping................................... ", end="")
-                time.sleep(random.randint(50, 70))
+                time.sleep(random.randint(110, 130))
                 t2 = datetime.datetime.now() - t
                 print("Slept for: " + str(t2))
 

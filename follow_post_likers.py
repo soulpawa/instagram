@@ -1,4 +1,3 @@
-# diego_devuelve_likes_a_ultimos_likers
 from diego_util import login
 import datetime
 import time
@@ -8,12 +7,13 @@ import winsound
 
 def main(desde=None):
     inicio = datetime.datetime.now()
-    print("...Start following.... at ... " + inicio.strftime("%c"))
+    print("...Start following at ... " + inicio.strftime("%c"))
     api = login()
     user_pk = "289060797"  # PK DIEGO: modificar para dar likes a otros
-    user_pk = "2058288265"
+    user_pk = "364963984"
     # /ecto:2058288265 /themacrowizard:2211285 /joseca_lifts:904385495 /sergio.espinar:644593827
-    # /marcos_gt:566286300 /guillenutriscientific:828934657
+    # /marcos_gt:566286300 /guillenutriscientific:828934657 /thefitmedstudent:2205196357
+    # /neatfitcouple:5886520324 /j.a.roa:1539017410 /sergvlc:364963984
 
     # COntrolamos si no queremos que empiece desde cero porque estamos reanudando
     desde = 0 if desde is None else desde
@@ -22,9 +22,9 @@ def main(desde=None):
     username = api.LastJson['user']['username']
 
     api.getUserFeed(user_pk)
-    lastJson = api.LastJson
-    taken = int((time.time() - lastJson['items'][0]['taken_at']) / 3600 / 24)  # seconds to days
-    post_id = lastJson['items'][0]['id']
+    last_json = api.LastJson
+    taken = int((time.time() - last_json['items'][0]['taken_at']) / 3600 / 24)  # seconds to days
+    post_id = last_json['items'][0]['id']
 
     api.getMediaLikers(post_id)
     likers = api.LastJson
@@ -42,7 +42,13 @@ def main(desde=None):
             file.write(str(x) + ";" + str(l['username']) + ";" + str(l['pk']) + ";" + "\n")
             file.flush()
 
-            user_posts = api.getUserFeed(l['pk'])
+            # Cada 100 descansa para evitar spammeo
+            if (likes % 100) == 0:
+                print("Sleeping for 300s")
+                time.sleep(300)
+                main(likes)
+
+            _ = api.getUserFeed(l['pk'])
             post_id = api.LastJson['items'][0]['id']
             api.like(post_id)
 
