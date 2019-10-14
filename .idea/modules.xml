@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../../stocks_python/.idea/Stocks.iml" filepath="$PROJECT_DIR$/../../stocks_python/.idea/Stocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Musica/.idea/Musica.iml" filepath="$PROJECT_DIR$/../Musica/.idea/Musica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Stocks/.idea/Stocks.iml" filepath="$PROJECT_DIR$/../Stocks/.idea/Stocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/instagram.iml" filepath="$PROJECT_DIR$/.idea/instagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python/mine/.idea/mine.iml" filepath="$PROJECT_DIR$/../../Python/mine/.idea/mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python/poyectoJoyeria/.idea/poyectoJoyeria.iml" filepath="$PROJECT_DIR$/../../Python/poyectoJoyeria/.idea/poyectoJoyeria.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Python/proyectoInstagram/.idea/proyectoInstagram.iml" filepath="$PROJECT_DIR$/../../Python/proyectoInstagram/.idea/proyectoInstagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python/proyectoStocks/.idea/proyectoStocks.iml" filepath="$PROJECT_DIR$/../../Python/proyectoStocks/.idea/proyectoStocks.iml" />
     </modules>
   </component>
 </project>
